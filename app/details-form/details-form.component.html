@@ -1,0 +1,28 @@
+<p>details-form works!</p>
+
+
+<form #formDeatils="ngForm" (ngSubmit)="showName(formDeatils)">
+  <!--First Name = <input type="text" name="firstname" [ngModel]="firstName" /><br />
+  Last Name = <input type="text" name="lastname" [ngModel]="lastName" />-->
+  First Name = <input type="text" name="firstname" [(ngModel)]="firstName" required /><br />
+  Last Name = <input type="text" name="lastname" [(ngModel)]="lastName" /><br />
+  <button>Generate</button>
+
+</form>
+{{UserName}}
+
+<div>Try from Form<!--<button (click)="show()">Generate</button>--> {{UserName}}</div>
+
+
+<!--From root component{{user}}-->
+<p>
+
+</p>
+
+<!--<input [(ngModel)]="name" #ctrl="ngModel" required>
+
+<p>Value: {{ name }}</p>
+<p>Valid: {{ ctrl.valid }}</p>
+<p>Valid: {{ ctrl.dirty }}</p>
+
+<button (click)="setValue()">Set value</button>-->
